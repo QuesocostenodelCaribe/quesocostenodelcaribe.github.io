@@ -131,6 +131,14 @@ footer {
   padding: 30px;
   font-size: 0.9em;
 }
+  section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
 </style>
 </head>
 
@@ -138,9 +146,10 @@ footer {
 
 
 <nav>
-  <a href="#asociacion">La Asociación</a>
-  <a href="#denominacion">Denominación de Origen</a>
-  <a href="#contacto">Contacto</a>
+<nav>
+  <a href="#" onclick="showSection('asociacion')">La Asociación</a>
+  <a href="#" onclick="showSection('denominacion')">Denominación de Origen</a>
+  <a href="#" onclick="showSection('contacto')">Contacto</a>
 </nav>
 
 <section id="inicio">
@@ -185,7 +194,8 @@ footer {
       La Denominación de Origen <strong>Queso Costeño del Caribe</strong> protege
       este producto tradicional, garantizando que sus características esenciales
       se mantengan vinculadas al territorio y a las prácticas tradicionales de
-      elaboración.
+      elaboración. La solicitud de protección fue presentada y defendida ante la Superintendencia de Industria
+      y Comercio por la Dra. Yarlemis Cohen
     </p>
 
     <p>
@@ -244,7 +254,7 @@ footer {
     </div>
 
     <div style="flex:1">
-      <img src="asociacion.jpg" alt="Encuentro de productores de queso costeño">
+      <img src="Asociacion.jpg" alt="Encuentro de productores de queso costeño">
     </div>
   </div>
 </section>
@@ -261,6 +271,20 @@ footer {
   Asociación de Queseros Tradicionales del Magdalena – Colombia<br>
   Sitio oficial del Queso Costeño del Caribe
 </footer>
+<script>
+function showSection(id) {
+  const sections = document.querySelectorAll("section");
+  sections.forEach(section => {
+    section.classList.remove("active");
+  });
+
+  const selected = document.getElementById(id);
+  if (selected) {
+    selected.classList.add("active");
+    selected.scrollIntoView({ behavior: "smooth" });
+  }
+}
+</script>
 
 </body>
 </html>
