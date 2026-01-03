@@ -17,12 +17,11 @@ body {
    text-align: center;
 }
 
-header .overlay {
-  background: rgba(0, 0, 0, 0.55);
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-  border-radius: 8px;
+header {
+  position: relative;
+  background: url("productor.jpg") center top / cover no-repeat;
+  padding: 70px 20px;
+  text-align: center;
 }
 
 header h1 {
@@ -145,13 +144,6 @@ section.active {
 <body>
 
 
-<nav>
-<nav>
-  <a href="#" onclick="showSection('asociacion')">La Asociación</a>
-  <a href="#" onclick="showSection('denominacion')">Denominación de Origen</a>
-  <a href="#" onclick="showSection('contacto')">Contacto</a>
-</nav>
-
 <section id="inicio">
   <h2>El Queso Costeño del Caribe</h2>
 
@@ -185,6 +177,12 @@ section.active {
     </div>
   </div>
 </section>
+
+  <nav>
+  <a href="#" onclick="showSection('asociacion')">La Asociación</a>
+  <a href="#" onclick="showSection('denominacion')">Denominación de Origen</a>
+  <a href="#" onclick="showSection('contacto')">Contacto</a>
+</nav>
 
 <section id="denominacion">
   <h2>Denominación de Origen</h2>
