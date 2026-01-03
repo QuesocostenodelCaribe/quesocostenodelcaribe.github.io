@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Queso Costeño del Caribe</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<header>
+  <div class="overlay">
+    <h1>Queso Costeño del Caribe</h1>
+      </div>
+</header>
 
 <style>
 body {
@@ -11,6 +12,30 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
   color: #333;
+  header {
+  position: relative;
+  background: url("productor.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+header .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 3.2em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 1.3em;
+  color: #f0f0f0;
 }
 
 header {
@@ -54,7 +79,14 @@ section {
 
 section h2 {
   color: #004b6b;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 2.1em;
+}
+
+section h3 {
+  font-size: 1.4em;
+  margin-top: 30px;
+  color: #333;
 }
 
 .flex {
