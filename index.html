@@ -1,81 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Asociación de Queseros Tradicionales del Magdalena</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1, h2 { color: #333; }
-    nav a { margin-right: 15px; text-decoration: none; color: #0056b3; }
-    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    th { background-color: #f2f2f2; }
-  </style>
+<meta charset="UTF-8">
+<title>Queso Costeño del Caribe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: url("productor.jpg") center/cover no-repeat;
+  color: white;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.6em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+nav {
+  background: #f4f4f4;
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: #004b6b;
+  font-weight: 600;
+}
+
+section {
+  padding: 55px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  color: #004b6b;
+  margin-bottom: 20px;
+}
+
+.flex {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.card {
+  background: #fafafa;
+  padding: 28px;
+  border-radius: 6px;
+}
+
+.subsection {
+  margin-top: 35px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  background: #eee;
+}
+
+footer {
+  background: #222;
+  color: #eee;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9em;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Asociación de Queseros Tradicionales del Magdalena</h1>
+<header>
+  <h1>Queso Costeño del Caribe</h1>
+  <p>
+    Producto tradicional de la región Caribe colombiana, elaborado artesanalmente
+    a partir de leche fresca y de contemplated saberes transmitidos por generaciones.
+  </p>
+</header>
 
 <nav>
-  <a href="#inicio">Inicio</a>
-  <a href="#denominacion">Denominación de Origen</a>
   <a href="#asociacion">La Asociación</a>
-  <a href="#registro">Registro de Beneficiarios</a>
+  <a href="#denominacion">Denominación de Origen</a>
   <a href="#contacto">Contacto</a>
 </nav>
 
-<hr>
+<section id="inicio">
+  <h2>El Queso Costeño</h2>
 
-<h2 id="inicio">Inicio</h2>
-<p>
-La Asociación de Queseros Tradicionales del Magdalena es la entidad administradora
-de la Denominación de Origen <strong>Queso Costeño del Caribe</strong>.
-En este sitio se publica información oficial relacionada con el uso autorizado
-de la denominación de origen y el registro público de beneficiarios.
-</p>
+  <div class="flex">
+    <div style="flex:1">
+      <p>
+        El queso costeño es un queso fresco tradicional del Caribe colombiano,
+        reconocido por su textura firme, sabor salado característico y amplia
+        versatilidad culinaria. Su elaboración se encuentra históricamente
+        asociada a la ganadería regional, al clima tropical y a prácticas
+        artesanales consolidadas a lo largo del tiempo.
+      </p>
 
-<h2 id="denominacion">Denominación de Origen</h2>
-<p>
-La Denominación de Origen Queso Costeño del Caribe protege un queso tradicional
-elaborado artesanalmente en la Región Caribe colombiana, cuyas características
-se deben a factores naturales y humanos propios del territorio.
-</p>
+      <p>
+        Las condiciones naturales del territorio y los factores humanos que
+        intervienen en su elaboración confieren al queso costeño propiedades
+        específicas que lo distinguen de otros quesos frescos del país.
+      </p>
 
-<h2 id="asociacion">La Asociación</h2>
-<p>
-La Asociación de Queseros Tradicionales del Magdalena es la entidad
-encargada de administrar el uso de la Denominación de Origen, verificar el cumplimiento
-del reglamento de uso y mantener el registro público de los autorizados.
-</p>
+      <h3>Calidades del producto</h3>
+      <ul>
+        <li>Elaboración a partir de leche fresca entera de origen regional.</li>
+        <li>Coagulación predominantemente enzimática.</li>
+        <li>Textura compacta y ligeramente friable.</li>
+        <li>Contenido de sal elevado como método tradicional de conservación.</li>
+        <li>Ausencia de procesos de maduración prolongada.</li>
+      </ul>
+    </div>
 
-<h2 id="registro">Registro de Beneficiarios</h2>
-<p>
-A continuación se presenta el registro público de los productores autorizados
-para el uso de la Denominación de Origen Queso Costeño del Caribe.
-</p>
+    <div style="flex:1">
+      <img src="queso.jpg" alt="Queso costeño en bloque">
+    </div>
+  </div>
+</section>
 
-<table>
-  <tr>
-    <th>Productor</th>
-    <th>Municipio</th>
-    <th>Departamento</th>
-    <th>Fecha de autorización</th>
-    <th>Estado</th>
-  </tr>
-  <tr>
-    <td>—</td>
-    <td>—</td>
-    <td>—</td>
-    <td>—</td>
-    <td>—</td>
-  </tr>
-</table>
+<section id="denominacion">
+  <h2>Denominación de Origen</h2>
 
-<h2 id="contacto">Contacto</h2>
-<p>
-Asociación de Queseros Tradicionales del Magdalena<br>
-Colombia
-</p>
+  <div class="card">
+    <p>
+      La Denominación de Origen <strong>Queso Costeño del Caribe</strong> protege
+      este producto tradicional, garantizando que sus características esenciales
+      se mantengan vinculadas al territorio y a las prácticas tradicionales de
+      elaboración.
+    </p>
+
+    <p>
+      La Asociación de Queseros Tradicionales del Magdalena actúa como entidad
+      administradora de la Denominación de Origen, en los términos de la
+      normativa vigente.
+    </p>
+
+    <div class="subsection">
+      <h3>Solicitar Autorización de Uso</h3>
+      <p>
+        Los productores interesados en utilizar la Denominación de Origen
+        Queso Costeño del Caribe deberán presentar solicitud ante la Asociación,
+        acreditando el cumplimiento de los requisitos establecidos en el
+        Reglamento de Uso.
+      </p>
+    </div>
+
+    <div class="subsection">
+      <h3>Registro de Beneficiarios</h3>
+      <p>
+        Registro público de los productores autorizados para el uso de la
+        Denominación de Origen Queso Costeño del Caribe.
+      </p>
+
+      <table>
+        <tr>
+          <th>Productor</th>
+          <th>Municipio</th>
+          <th>Departamento</th>
+          <th>Fecha de autorización</th>
+          <th>Estado</th>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="asociacion">
+  <h2>La Asociación</h2>
+
+  <div class="flex">
+    <div style="flex:1">
+      <p>
+        La Asociación de Queseros Tradicionales del Magdalena es una organización
+        sin ánimo de lucro que agrupa productores de queso costeño, promueve el
+        mejoramiento del producto y administra la Denominación de Origen.
+      </p>
+    </div>
+
+    <div style="flex:1">
+      <img src="asociacion.jpg" alt="Encuentro de productores de queso costeño">
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>
+    Asociación de Queseros Tradicionales del Magdalena<br>
+    Colombia
+  </p>
+</section>
+
+<footer>
+  Asociación de Queseros Tradicionales del Magdalena – Colombia<br>
+  Sitio oficial del Queso Costeño del Caribe
+</footer>
 
 </body>
 </html>
