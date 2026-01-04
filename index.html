@@ -143,8 +143,14 @@ section.active {
 
 <body>
 
+<nav>
+  <a href="#" onclick="showSection('home')">Inicio</a>
+  <a href="#" onclick="showSection('asociacion')">La Asociación</a>
+  <a href="#" onclick="showSection('denominacion')">Denominación de Origen</a>
+  <a href="#" onclick="showSection('contacto')">Contacto</a>
+</nav>
 
-<section id="inicio">
+<section id="home" class="active">
   <h2>El Queso Costeño del Caribe</h2>
 
   <div class="flex">
@@ -173,18 +179,12 @@ section.active {
     </div>
 
     <div style="flex:1">
-      <img src="queso.jpg" alt="Queso costeño del Caribe en bloque">
+      <img src="queso.jpg" alt="Queso costeño en bloque">
     </div>
   </div>
 </section>
 
-  <nav>
-  <a href="#" onclick="showSection('asociacion')">La Asociación</a>
-  <a href="#" onclick="showSection('denominacion')">Denominación de Origen</a>
-  <a href="#" onclick="showSection('contacto')">Contacto</a>
-</nav>
-
-<section id="denominacion">
+ <section id="denominacion">
   <h2>Denominación de Origen</h2>
 
   <div class="card">
@@ -252,7 +252,7 @@ section.active {
     </div>
 
     <div style="flex:1">
-      <img src="Asociacion.jpg" alt="Encuentro de productores de queso costeño">
+      <img src="Asociacion.jpeg" alt="Encuentro de productores de queso costeño">
     </div>
   </div>
 </section>
