@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-<header>
-  <div class="overlay">
-    <h1>Queso Costeño del Caribe</h1>
-      </div>
-</header>
+<head>
+<meta charset="UTF-8">
+<title>Queso Costeño del Caribe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 body {
@@ -12,47 +11,31 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  header {
-  position: relative;
-   text-align: center;
 }
 
+/* HEADER */
 header {
   position: relative;
   background: url("productor.jpg") center 20% / cover no-repeat;
-  padding: 65px 20px;
+  padding: 70px 20px;
   text-align: center;
+}
+
+header .overlay {
+  background: rgba(0,0,0,0.55);
+  padding: 45px 20px;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 8px;
 }
 
 header h1 {
   font-size: 3.2em;
-  margin-bottom: 20px;
   color: #ffffff;
+  margin: 0;
 }
 
-header p {
-  font-size: 1.3em;
-  color: #f0f0f0;
-}
-
-header {
-  background: url("productor.jpg") center/cover no-repeat;
-  color: white;
-  padding: 90px 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.6em;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2em;
-  max-width: 900px;
-  margin: auto;
-}
-
+/* NAV */
 nav {
   background: #f4f4f4;
   padding: 12px;
@@ -68,24 +51,30 @@ nav a {
   font-weight: 600;
 }
 
+/* SECCIONES */
 section {
+  display: none;
   padding: 55px 20px;
   max-width: 1100px;
   margin: auto;
 }
 
+section.active {
+  display: block;
+}
+
 section h2 {
   color: #004b6b;
-  margin-bottom: 25px;
   font-size: 2.1em;
+  margin-bottom: 25px;
 }
 
 section h3 {
   font-size: 1.4em;
   margin-top: 30px;
-  color: #333;
 }
 
+/* LAYOUT */
 .flex {
   display: flex;
   gap: 35px;
@@ -104,10 +93,6 @@ section h3 {
   border-radius: 6px;
 }
 
-.subsection {
-  margin-top: 35px;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -123,6 +108,7 @@ th {
   background: #eee;
 }
 
+/* FOOTER */
 footer {
   background: #222;
   color: #eee;
@@ -130,18 +116,17 @@ footer {
   padding: 30px;
   font-size: 0.9em;
 }
-  section {
-  display: none;
-}
-
-section.active {
-  display: block;
-}
-
 </style>
 </head>
 
 <body>
+
+<header>
+  <div class="overlay">
+    <h1>Queso Costeño del Caribe</h1>
+  </div>
+</header>
+
 
 <nav>
   <a href="#" onclick="showSection('home')">Inicio</a>
@@ -261,9 +246,14 @@ section.active {
   <h2>Contacto</h2>
   <p>
     Asociación de Queseros Tradicionales del Magdalena<br>
-    Colombia
+    Colombia<br><br>
+    Correo electrónico:<br>
+    <a href="mailto:ycohen@unimagdalena.edu.co">
+     ycohen@unimagdalena.edu.co
+    </a>
   </p>
 </section>
+
 
 <footer>
   Asociación de Queseros Tradicionales del Magdalena – Colombia<br>
